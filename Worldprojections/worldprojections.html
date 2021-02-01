@@ -12,47 +12,47 @@
     <p>Using QGIS, I created these different projections based on a base map that I uploaded from Natural Earth's data. From there, I picked my base map's color to be orange, my indicatrix as pink, and my grid lines as black. In the bottom right of the program, it indicates what projection is being displayed, and I clicked where it originally said "EPSG..." and then typed in the 'code' for the projection I was searching for. From there I went on to save it andlabel each one. I pushed my HTML page through GITHUB which them ended up becoming this web page!</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This map is the current golbal reference system, as it is the most accuracte representation that includes multiple aspects. Area is represented well, the map's origin is at the Earth's center so shape is truer towards the center, but becomes wonkier towards the poles.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Meridians are equidistant and angled towards the Prime Meridiam. Shape and area are both slightly off, but everything along the centeral lines look pretty accurate, although there is a slight shape change furhter out as you can see by the indicatrix.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
     <h2>Pseudo Mercador Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Shape and distance are accurate, as this type of map was used for sea travel to reference true North with compass navigation. Size representation is very distorted. In actuallity, Greenland is 1/8 the size of Africa, but the projection makes them the same size. Shape is accurate, as the indicatrix are perfect circles, but differ in size. </h3>
     <a href="./maps/3857.pdf">
     <img src=".//maps/3857.pdf" alt="3857" width='500px'>
     </a>
     <h2>Sphere Winkle I Projection</h2>
-    <h3>Some observations</h3>
+    <h3>There isa general shape and size distortion that you can see by the irregular indicatrix. The centeral Meridian and all parallels are straight lines, but moving further E. and W. the meridians begin to curve. The total area is to scale, but not at large/local scales, with distorted direction and distance at the poles.</h3>
     <a href="./maps/53018.png">
     <img src=".//maps/53018.png" alt="53018" width='500px'>
     </a>
     <h2>World Cylindrical Equal Area Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Uses straight lines for indicating meridians and parallels. with best accuracy along slim areas near the centeral lines. Land area is accurate, with some areas having a .5 m x 2 m comparison. There is distortion in shape near the poles, but it is true along and near the equator.</h3>
     <a href="./maps/54034.png">
     <img src=".//maps/54034.png" alt="54034" width='500px'>
     </a>
     <h2>World Equidistant Conic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The meridians are equally spaced, and area distortion gradually increases after the first parallel, but remains constant along each parallel. General scale seems to follow a similar pattern, remaining constant along each parallel and increasing as you move further away from the center.</h3>
     <a href="./maps/54027.png">
     <img src=".//maps/54027.png" alt="54027" width='500px'>
     </a>
     <h2>North Pole Azimuthal Equidistant Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The meridians are straight lines, while the latidudes/parallels are circular. Only the inner parallel seems to be true to shape and size, and increases with each setep away from the center.</h3>
     <a href="./maps/102016.png">
     <img src=".//maps/102016.png" alt="102016" width='500px'>
     </a>
     <h2>World Equidistant Cylindrical (Sphere) Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The projection is made with contact at the equator. As you get further from the equator/line of tangency, area and shape become increasingly distorted.</h3>
     <a href="./maps/4088.png">
     <img src=".//maps/4088.png" alt="4088" width='500px'>
     </a>
     <h2>World Craster Parabolic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Meridian looks to be about half the size of the equator line. Area looks to be about equal, and there is shape distortion away from the center as you move toward the poles.</h3>
     <a href="./maps/54046.png">
     <img src=".//maps/54046.png" alt="54046" width='500px'>
     </a>
