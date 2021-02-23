@@ -1,0 +1,7 @@
+var davislib = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 3, "descrip": "davis library" }, "geometry": { "type": "Point", "coordinates": [ -79.04792, 35.91101 ] } }
+]
+}
