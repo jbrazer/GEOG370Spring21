@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+<body>
+<h1>Homework 7: Normalized Census Data Choropleth </h1>
+<h2>Julia Brazer</h2>
+<a>Using the same data provided in HW 7, I created my ratio by dividing the number of people in each county that identify as having Hispanic origin, by the total population of each county. The number was 0.0XX, so I multiplied the ratio by 1000 in order to get the numbers used on my maps and displayed in the legends, which was x amount of people per thousand. This ratio helps put the population densities of people of Hispanic origin in Florida into perspective while looking at the areas that communities tend to form. Some counties tend to have lower populations, while others have almost a 50% ratio of Hispanics that live there.</a>
+<!-- Your map goes here -->
+<h3><u>Equal Interval Map</u></h4>
+    <a href="equal_interval.png">
+        <br/><img src="equal_interval.png" alt="Equal Intervals" width='500px'><br/> 
+        </a>
+        <a>This map's classification method takes the value range and divides it by the number of classes your provide for the choropleth, presenting the data in equal groups. In my map, the data ranged from 26 to 685. To get the amount of data points in each class, you must do the math as follows (using 7 classes as indicated on the legend): 685-26 = 659 --> 659/7 = ~94. As you can see, there are 94 data points in each set of classes on my map.  </a>
+    <h4><em>Pros:</em></h4>
+    <a>Best for continuous data sets such as precipitation. The map is easy to interpret, especially when aimed at a nontechnical audience. </a>
+    <h4><em>Cons:</em></h4>
+    <a>There will almost always be an uneven spread and distribution of data between classes, hence why there is only one county with the darkest orange, and 46 with the lightest orange.</a>
+<h3><u>Natural Breaks Map</u></h4>
+    <a href="natural_breaks2.png">
+        <br/><img src="natural_breaks2.png" alt="Natural Breaks" width='500px'><br/> 
+        </a>
+        <a>This map's classification method groups data by identifying distinct "natural" cut offs and break points in the data. </a>
+    <h4><em>Pros:</em></h4>
+    <a> The data arranged so that there is less variation within each classification, and outliers are grouped together. This methos is best used when presenting unevenly distributed data.</a>
+    <h4><em>Cons:</em></h4>
+    <a> This meyhod can create classifications containing widely varying data ranges. It is also difficult to compare two different maps that use the natural breaks method becuase classification ranges are very specific to each data set. </a>
+    
+
+<h3><u>Equal Interval Map</u></h4>
+    <a href="eQuantile_equal_count.png">
+        <br/><img src="Quantile_equal_count.png" alt="Quantile Equal Count" width='500px'><br/> 
+        </a>
+        <a>This map shows the highest average density of people of Hispanic origin per county, as you can see by the large area of dark orange covering the map. Also known as the quantile classification, this method seperates the data into categories based on the number of individual features that are being accounted for. To further clarify, in my example, the "features" would be the counties in Florida (67 of them), and since I am using 7 different classifications, each classification (the different colors on the legend) is distributed to either 9 or 10 counties. </a>
+    <h4><em>Pros:</em></h4>
+    <a> This method is best used for data that is evenly distributed. It also helps with emphasizing relative positioning in regerd to the whole data set.</a>
+    <h4><em>Cons:</em></h4>
+    <a> Since this method revolves around having a certain number of data points or features in each classification, the data points are not evenly distributed and are likely to have a wide range of values within each class, giving a false impression of actual statistics. Data with very small differences can also be placed in different classifications, which gives the facade that the dataset is more varried than in actuality. </a>
+    
+    
+
+</body>
+</html>
